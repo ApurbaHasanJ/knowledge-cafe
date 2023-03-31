@@ -1,0 +1,16 @@
+.blog{
+    width: 845px;
+}
+
+.blog-poster{
+    width: 845px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.blog-writer-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
