@@ -4,6 +4,55 @@
     /* height: 20px; */
 }
 
-.nav-items:hover{
 
-}
+.header {
+    max-width: 100%;
+  }
+  
+  .nav {
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  /* .nav-items {
+    flex: 1;
+    margin-left: 10px;
+  } */
+  
+  /* .user-img {
+    width: 40px;
+    height: 40px;
+  } */
+  
+  @media (max-width: 768px) {
+    .logo {
+        padding-top: 18px;
+      font-size: 3rem;
+    }
+    /* .nav-items {
+      margin-left: 0;
+    } */
+  }
+  
+  @media (max-width: 640px) {
+    .logo {
+      font-size: 2rem;
+      padding-top: 18px;
+    }
+    .nav-items {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+    /* .user-img {
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+    } */
+  }
+  
