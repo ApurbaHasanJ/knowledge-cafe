@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Blogs from '../../Blogs/Blogs';
+import BlogBookmarks from '../BlogBookmarks/BlogBookmarks';
+import Blogs from '../Blogs/Blogs';
 import './Container.css'
 
 const Container = () => {
@@ -16,14 +17,14 @@ const Container = () => {
 
 
     return (
-        <div className='main flex'>
+        <div className='blogs-container lg:flex  gap-3'>
             <div className='Blogs'>
                 {
                     blogs.map(blog => <Blogs blog={blog} key={blog.id}></Blogs>)
                 }
             </div>
-            <aside>
-                <p>THis is aSide tag</p>
+            <aside className=' ml-auto'>
+                <BlogBookmarks></BlogBookmarks>
             </aside>
             
         </div>

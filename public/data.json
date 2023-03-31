@@ -21,19 +21,19 @@
     },
     {
         "id": "3",
-        "blogPoster": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80",
+        "blogPoster": "https://img.freepik.com/free-vector/illustration-concept-with-multitasking_52683-30925.jpg?w=1060&t=st=1680285335~exp=1680285935~hmac=20ac61b682c4759b0fe10bc9c6720b98fe716196ad2b9e8b889dbd61dccfc625",
         "blogWriter": "Alexander Hipp",
         "writerImg": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "publishDate": "2022-12-28",
         "readingTime": "10",
-        "blogTitle": "Web development basics for beginners...",
+        "blogTitle": "Master Microsoft Power Platform and Become an In-Demand!",
         "hashtags": {"firstTag": "#beginners", "secTag": "#programming"}
     },
     {
         "id": "4",
         "blogPoster": "https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "blogWriter": "Ben Den Engelsen",
-        "writerImg": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        "writerImg": "https://img.freepik.com/free-photo/young-girl-with-long-hair-wearing-colorful-dress-looking-camera-positive-happy-smiling_141793-28869.jpg?w=1060&t=st=1680286042~exp=1680286642~hmac=c2cf610bbf20e93676145d0a35c0af31bb2d0127c489000c1c50b2654a3513ed",
         "publishDate": "2023-02-07",
         "readingTime": "15",
         "blogTitle": "ReactJS Tutorial for Beginners: Learn with Step by Step Example...",

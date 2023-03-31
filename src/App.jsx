@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import Container from './components/Header/Container/Container'
+import Container from './components/Container/Container'
 import Header from './components/Header/Header'
 
 function App() {
