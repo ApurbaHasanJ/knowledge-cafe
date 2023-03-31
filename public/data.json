@@ -1,0 +1,43 @@
+[
+    {
+        "id": "1",
+        "blogPoster": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80",
+        "blogWriter": "Julian Wan",
+        "writerImg": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+        "publishDate": "2022-08-23",
+        "readingTime": "05",
+        "blogTitle": "How to get your first job as a self-taught programmer?",
+        "hashtags": [beginners, programming]
+    },
+    {
+        "id": "2",
+        "blogPoster": "https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "blogWriter": "Harps Joseph",
+        "writerImg": "https://unsplash.com/photos/WNoLnJo7tS8",
+        "publishDate": "2022-11-10",
+        "readingTime": "07",
+        "blogTitle": "How do I get a job on Upwork with no experience?",
+        "hashtags": [#beginners, #programming]
+    },
+    {
+        "id": "1",
+        "blogPoster": "https://unsplash.com/photos/6sAl6aQ4OWI",
+        "blogWriter": "Alexander Hipp",
+        "writerImg": "https://unsplash.com/photos/tAvpDE7fXgY",
+        "publishDate": "2022-08-23",
+        "readingTime": "10",
+        "blogTitle": "Web development basics for beginners...",
+        "hashtags": [#beginners, #programming]
+    },
+    {
+        "id": "1",
+        "blogPoster": "https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "blogWriter": "Ben Den Engelsen",
+        "writerImg": "https://unsplash.com/photos/YUu9UAcOKZ4",
+        "publishDate": "2022-08-23",
+        "readingTime": "13",
+        "blogTitle": "ReactJS Tutorial for Beginners: Learn with Step by Step Example...",
+        "hashtags": [#beginners, #programming]
+    }
+
+]
