@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './BlogBookmarks.css'
 const BlogBookmarks = ({blogReadTime}) => {
 
-    const [readTime, setReadTime] = useState(0)
+    const [readTime, setReadTime] = useState(0);
+    
     // console.log(readTime);
 
     useEffect(()=>{
@@ -23,14 +24,6 @@ const BlogBookmarks = ({blogReadTime}) => {
             </h1>
             <div className='bg-slate-200 p-7 rounded-lg'>
                 <h1 className='text-2xl font-bold'>Bookmarked Blogs : 8</h1>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
-                <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
                 <p className='font-semibold text-xl mt-4 p-4 rounded-lg bg-white'>Master Microsoft Power Platform and Become an In-Demand!</p>
             </div>
         </div>

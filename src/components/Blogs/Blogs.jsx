@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Blogs.css';
 
-const Blogs = ({blog, handleBlogReadTime}) => {
+const Blogs = ({blog, handleBlogReadTime, handleBookmark}) => {
     // console.log(props);
     return (
         <div className='blog mb-20 '>
@@ -16,7 +16,7 @@ const Blogs = ({blog, handleBlogReadTime}) => {
                 </div>
                 <p className='ml-auto text-gray-600 text-lg font-medium'>{blog.readingTime} 
                 min read
-                <FontAwesomeIcon className='ml-3' icon={faBookmark} />
+                <FontAwesomeIcon onClick={()=>handleBookmark(blog.blogTitle)} className='ml-3' icon={faBookmark} />
                 </p>
             </div>
             <h1 className='font-bold text-4xl mb-4'>{blog.blogTitle}</h1>
