@@ -6,19 +6,20 @@ import './Container.css'
 const Container = () => {
 
     // Spent time on reading blog posts
-    const [blogReadTime, setBlogsReadTime] = useState(0)
-    const handleBlogReadTime = (newReadTime) => {
-            const previousReadTime = JSON.parse(localStorage.getItem('BlogReadTime'));
+    const [blogReadTime, setBlogsReadTime] = useState('');
+
+    const handleBlogReadTime = (readTime) => {
+            const previousReadTime = JSON.parse(localStorage.getItem('blogReadTime'));
             // console.log(previousReadTime);
             if (previousReadTime){
-                const totalReadTime = previousReadTime + newReadTime;
-                localStorage.setItem('BlogReadTime', JSON.stringify(totalReadTime));
+                const totalReadTime = previousReadTime + readTime;
+                localStorage.setItem('blogReadTime', totalReadTime);
                 setBlogsReadTime(totalReadTime);
 
             }
             else{
-                localStorage.setItem('BlogReadTime', JSON.stringify(newReadTime));
-                setBlogsReadTime(newReadTime);
+                localStorage.setItem('blogReadTime', readTime);
+                setBlogsReadTime(readTime);
             }
     };
 
