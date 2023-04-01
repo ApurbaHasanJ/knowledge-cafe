@@ -10,19 +10,27 @@ const Container = () => {
 const [bookmarks, setBookmarks] = useState([]);
 
 // Handle Bookmarks
-const handleBookmark = (bookmark) =>{
+const handleBookmark = (bookmark) => {
     const previousBookmark = JSON.parse(localStorage.getItem('blogBookmark'));
-    if(previousBookmark){
-        previousBookmark.push(bookmark);
-        localStorage.setItem('blogBookmark', JSON.stringify(previousBookmark));
-        setBookmarks(previousBookmark);
+  
+    if (previousBookmark) {
+      const isAlreadyBookmarked = previousBookmark.some((b) => JSON.stringify(b) === JSON.stringify(bookmark));
+      if (isAlreadyBookmarked) {
+        toast('This Blog Is Already Bookmarked');
+      } else {
+        const updatedBookmarks = [...previousBookmark, bookmark];
+        localStorage.setItem('blogBookmark', JSON.stringify(updatedBookmarks));
+        setBookmarks(updatedBookmarks);
+        toast('Bookmarked Successfully');
+      }
+    } else {
+      localStorage.setItem('blogBookmark', JSON.stringify([bookmark]));
+      setBookmarks([bookmark]);
+      toast('Bookmarked Successfully');
     }
-    else{
-        localStorage.setItem('blogBookmark', JSON.stringify([bookmark]));
-        setBookmarks([bookmark]);
-    }
-}
-
+  };
+  
+  
     // Spent time on reading blog posts
     const [blogReadTime, setBlogsReadTime] = useState('');
 
