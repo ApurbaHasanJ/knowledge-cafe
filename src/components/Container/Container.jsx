@@ -17,7 +17,8 @@ const handleBookmark = (bookmark) => {
       const isAlreadyBookmarked = previousBookmark.some((b) => JSON.stringify(b) === JSON.stringify(bookmark));
       if (isAlreadyBookmarked) {
         toast('This Blog Is Already Bookmarked');
-      } else {
+      } 
+      else {
         const updatedBookmarks = [...previousBookmark, bookmark];
         localStorage.setItem('blogBookmark', JSON.stringify(updatedBookmarks));
         setBookmarks(updatedBookmarks);

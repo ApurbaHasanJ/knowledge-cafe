@@ -27,7 +27,7 @@ const BlogBookmarks = ({blogReadTime, bookmarks}) => {
 
     return (
         <div className='sticky top-7 blogBookmarks '>
-            <h1 className='mb-6 text-center font-bold text-indigo-600 bg-indigo-200 p-6 text-2xl rounded-lg'>
+            <h1 className='mb-6 text-center font-bold border-2 border-indigo-900/50 text-indigo-700 bg-indigo-200 p-6 text-2xl rounded-lg'>
                 Spent time on read : {readTime}min
             </h1>
             <div className='bg-slate-200 p-7 rounded-lg'>
