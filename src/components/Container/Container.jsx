@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import BlogBookmarks from '../BlogBookmarks/BlogBookmarks';
 import Blogs from '../Blogs/Blogs';
 import './Container.css'
@@ -6,22 +7,21 @@ import './Container.css'
 const Container = () => {
 
     // Add to Bookmark
-    const [bookmarks, setBookmarks] = useState('');
+const [bookmarks, setBookmarks] = useState([]);
 
-    // Handle Bookmarks
-    const handleBookmark = (bookmark) =>{
-        const previousBookmark = JSON.parse(localStorage.getItem('bookmark'));
-        if(previousBookmark){
-            const newBookmark = previousBookmark + bookmark;
-            localStorage.setItem('bookmark', JSON.stringify(newBookmark));
-            setBookmarks(newBookmark);
-        }
-        else{
-            localStorage.setItem('bookmark', JSON.stringify(bookmark));
-            setBookmarks(bookmark);
-        }
+// Handle Bookmarks
+const handleBookmark = (bookmark) =>{
+    const previousBookmark = JSON.parse(localStorage.getItem('blogBookmark'));
+    if(previousBookmark){
+        previousBookmark.push(bookmark);
+        localStorage.setItem('blogBookmark', JSON.stringify(previousBookmark));
+        setBookmarks(previousBookmark);
     }
-
+    else{
+        localStorage.setItem('blogBookmark', JSON.stringify([bookmark]));
+        setBookmarks([bookmark]);
+    }
+}
 
     // Spent time on reading blog posts
     const [blogReadTime, setBlogsReadTime] = useState('');
@@ -42,11 +42,6 @@ const Container = () => {
             }
     };
 
-    // Handle BookMarks
-    // const bookmarks = ()=>{
-
-    // }
-
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -56,17 +51,16 @@ const Container = () => {
     }, [])
 
 
-
-
     return (
-        <div className='blogs-container lg:flex mb-10  gap-3'>
-            <div className='Blogs'>
+        <div className='blogs-container lg:flex mb-10  gap-3 border-b-4 border-indigo-300'>
+            <div className='Blogs mb-4'>
                 {
                     blogs.map(blog => <Blogs blog={blog} key={blog.id} handleBlogReadTime ={handleBlogReadTime} handleBookmark={handleBookmark}></Blogs>)
                 }
             </div>
-            <aside className=' ml-auto'>
-                <BlogBookmarks blogReadTime={blogReadTime}></BlogBookmarks>
+            <aside className=' ml-auto mb-4'>
+                <BlogBookmarks blogReadTime={blogReadTime} bookmarks={bookmarks}></BlogBookmarks>
+                <ToastContainer></ToastContainer>
             </aside>
             
         </div>
