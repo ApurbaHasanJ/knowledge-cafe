@@ -5,6 +5,28 @@ import './Container.css'
 
 const Container = () => {
 
+    // Spent time on reading blog posts
+    const [blogReadTime, setBlogsReadTime] = useState(0)
+    const handleBlogReadTime = (newReadTime) => {
+            const previousReadTime = JSON.parse(localStorage.getItem('BlogReadTime'));
+            // console.log(previousReadTime);
+            if (previousReadTime){
+                const totalReadTime = previousReadTime + newReadTime;
+                localStorage.setItem('BlogReadTime', JSON.stringify(totalReadTime));
+                setBlogsReadTime(totalReadTime);
+
+            }
+            else{
+                localStorage.setItem('BlogReadTime', JSON.stringify(newReadTime));
+                setBlogsReadTime(newReadTime);
+            }
+    };
+
+    // Handle BookMarks
+    // const bookmarks = ()=>{
+
+    // }
+
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -17,14 +39,14 @@ const Container = () => {
 
 
     return (
-        <div className='blogs-container lg:flex  gap-3'>
+        <div className='blogs-container lg:flex mb-10  gap-3'>
             <div className='Blogs'>
                 {
-                    blogs.map(blog => <Blogs blog={blog} key={blog.id}></Blogs>)
+                    blogs.map(blog => <Blogs blog={blog} key={blog.id} handleBlogReadTime={handleBlogReadTime}></Blogs>)
                 }
             </div>
             <aside className=' ml-auto'>
-                <BlogBookmarks></BlogBookmarks>
+                <BlogBookmarks blogReadTime={blogReadTime}></BlogBookmarks>
             </aside>
             
         </div>

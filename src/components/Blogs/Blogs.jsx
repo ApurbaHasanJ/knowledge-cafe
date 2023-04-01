@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Blogs.css';
 
-const Blogs = ({blog}) => {
+const Blogs = ({blog, handleBlogReadTime}) => {
     // console.log(props);
     return (
         <div className='blog mb-20 '>
@@ -24,7 +24,7 @@ const Blogs = ({blog}) => {
                 <p>{blog.hashtags.firstTag}</p>
                 <p>{blog.hashtags.secTag}</p>
             </div>
-            <p className='mt-5 text-indigo-700 font-semibold underline hover:underline-offset-4'>Mark as read</p>
+            <p onClick={()=> handleBlogReadTime(blog.readingTime)} className='mt-5 text-indigo-700 font-semibold underline hover:underline-offset-4'>Mark as read</p>
             
         </div>
     );
